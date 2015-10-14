@@ -1,7 +1,6 @@
 var fs = require('fs');
 var rukus = require('rukus');
 
-
 module.exports = function(context) {};  // required to be considered a loader
 
 module.exports.pitch = function(remainingRequest, precedingRequest, data) {
