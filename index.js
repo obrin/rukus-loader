@@ -17,6 +17,6 @@ module.exports.pitch = function(remainingRequest, precedingRequest, data) {
     //add the entrypoint content
     parts.push(fs.readFileSync(remainingRequest));
     //add riot require and return the payload
-    return "var riot = require('riot');" + parts.join('\n');
+    return "var riot = require('riot'); (window||global).RukusApp = riot.observable();" + parts.join('\n');
 };
 
