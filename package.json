@@ -1,6 +1,6 @@
 {
   "name": "rukus-loader",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "webpack loader for rukus",
   "main": "index.js",
   "scripts": {
