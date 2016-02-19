@@ -47,7 +47,7 @@ function riotifyComponent (location, css) {
     this.addDependency(js);
     this.addDependency(template);
 
-    if (!css && !~files.indexOf('styles.css')) {
+    if ((!css && css !== '') || !~files.indexOf('styles.css')) {
       return "riot.tag('"+componentName+"', `"+fs.readFileSync(template)+"`, require('"+js+"'));";
     }
 
