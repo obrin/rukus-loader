@@ -4,11 +4,15 @@
   "description": "webpack loader for rukus",
   "main": "index.js",
   "scripts": {
+    "pretest": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "iflix team",
   "license": "ISC",
   "dependencies": {
     "rukus": "^1.2.0"
+  },
+  "devDependencies": {
+    "standard": "^6.0.7"
   }
 }
