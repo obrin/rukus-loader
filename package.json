@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "author": "iflix team",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "rukus": "^1.2.0"
   },
   "devDependencies": {
+    "ava": "^0.12.0",
     "standard": "^6.0.7"
   }
 }
