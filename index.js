@@ -37,10 +37,6 @@ function riotifyComponent (location, css) {
     this.emitError('component at ' + location + ' requires an index.html file.')
   }
 
-  if (files.indexOf('test.js') === -1) {
-    this.emitWarning('component at ' + location + ' missing a test.js file.')
-  }
-
   var js = path.resolve(location, 'index.js')
   var template = path.resolve(location, 'index.html')
 
